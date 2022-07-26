@@ -11,7 +11,9 @@ body {
   background-color: var(--main-bgrd-color);
   color: var(--second-main-color);
 }
-
+.list {
+  list-style: none;
+}
 .link {
   text-decoration: none;
 }
