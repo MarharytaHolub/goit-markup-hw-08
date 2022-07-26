@@ -1,14 +1,15 @@
 :root {
   --main-title-color: #212121;
+  --second-main-color: #757575;
   --accent-color: #2196f3;
+  --second-accent-color: #ffffff;
   --main-bgrd-color: #ffffff;
   --second-bgrd-color: #f5f4fa;
 }
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-bgrd-color);
-  color: #757575;
-  letter-spacing: 0.03em;
+  color: var(--second-main-color);
 }
 .list {
   list-style: none;
@@ -21,13 +22,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-dark {
   color: #000000;
 }
 .logo-light {
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 .site-nav-link {
   font-weight: 500;
@@ -49,7 +51,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-main-color);
 }
 .hero {
   background-color: #2f303a;
@@ -61,7 +63,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -70,20 +72,21 @@ body {
 .hero-button {
   font-family: inherit;
   font-weight: 700;
-
   line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--second-accent-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 .benefits-item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 .benefits-item-text {
@@ -95,6 +98,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 .team {
@@ -105,11 +109,13 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 .team-list-text {
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 .footer {
@@ -118,10 +124,11 @@ body {
 .footer-item {
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 .footer-address {
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 .footer-tel,
 .footer-mail {
@@ -133,12 +140,15 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
   background-color: var(--second-bgrd-color);
+  cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
+  letter-spacing: 0.03em;
+  color: var(--second-accent-color);
   background-color: var(--accent-color);
 }
 .portfolio-item-title {
@@ -151,4 +161,5 @@ body {
 .portfolio-item-text {
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
 }
