@@ -92,6 +92,7 @@ body {
 .benefits-item-text {
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .title {
   font-weight: 700;
