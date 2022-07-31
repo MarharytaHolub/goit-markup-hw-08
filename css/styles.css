@@ -11,8 +11,17 @@ body {
   background-color: var(--main-bgrd-color);
   color: var(--second-main-color);
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 .link {
   text-decoration: none;
@@ -55,19 +64,17 @@ body {
 }
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-accent-color);
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: inherit;
@@ -79,8 +86,19 @@ body {
   letter-spacing: 0.06em;
   color: var(--second-accent-color);
   background-color: var(--accent-color);
+  display: inline-block;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  border: 1px transparent;
 }
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .benefits-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -88,6 +106,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .benefits-item-text {
   font-size: 14px;
@@ -145,12 +165,18 @@ body {
   color: var(--main-title-color);
   background-color: var(--second-bgrd-color);
   cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px transparent;
 }
 .filter-button:hover,
 .filter-button:focus {
   letter-spacing: 0.03em;
   color: var(--second-accent-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-item-title {
   font-weight: 700;
