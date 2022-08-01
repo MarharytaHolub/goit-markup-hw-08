@@ -207,8 +207,10 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-list-box {
+  padding: 30px 0px;
+}
 .team-item-title {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -218,7 +220,6 @@ img {
 }
 .team-list-text {
   margin-top: 10px;
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
