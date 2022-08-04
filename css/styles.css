@@ -69,10 +69,7 @@ img {
   display: flex;
   align-items: center;
 }
-.site-nav-item,
-.contact-nav-item {
-  padding: 32px 0px;
-}
+
 .site-nav-list {
   margin-left: 93px;
 }
@@ -84,6 +81,8 @@ img {
   margin-right: 50px;
 }
 .site-nav-link {
+  padding: 32px 0px;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -107,10 +106,14 @@ img {
 }
 /* ---Hero---- */
 .hero {
+  padding: 200px 0px;
   background-color: #2f303a;
   text-align: center;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -143,6 +146,19 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* ---Benefits---- */
+.benefits-title,
+.portfolio-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .benefits-list {
   display: flex;
 }
@@ -231,10 +247,9 @@ img {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.footer-list {
+.address {
   margin-top: 20px;
 }
-
 .footer-item {
   font-size: 14px;
   line-height: 1.71;
@@ -255,13 +270,12 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-item {
-  margin-bottom: 50px;
-}
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
