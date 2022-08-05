@@ -175,6 +175,18 @@ img {
 .benefits-list {
   display: flex;
 }
+.benefits-icon-container {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.benefits-icon {
+}
+
 .benefits-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -238,6 +250,7 @@ img {
 }
 .team-list-box {
   padding: 30px 0px;
+  background-color: var(--main-bgrd-color);
 }
 .team-item-title {
   font-weight: 500;
@@ -253,6 +266,32 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+}
+.teams-soc {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.teams-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-bgrd-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teams-soc-link:hover,
+.teams-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.teams-soc-link:hover .teams-soc-icon,
+.teams-soc-link:focus .teams-soc-icon {
+  fill: var(--second-accent-color);
+}
+.teams-soc-icon {
+  fill: #afb1b8;
 }
 /* ---Footer---- */
 .footer {
