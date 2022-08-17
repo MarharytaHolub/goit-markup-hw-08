@@ -458,6 +458,7 @@ img {
 }
 .join {
   margin-left: 70px;
+  margin-right: 93px;
 }
 .join-text {
   font-weight: 700;
@@ -465,7 +466,60 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--second-accent-color);
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-accent-color);
+  margin-bottom: 20px;
+}
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  color: var(--second-accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
   color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #188ce8;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  padding: 15px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border: 1px solid #2196f3;
+}
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1, 25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 /* ---Portfolio---- */
 .filter-list {
@@ -612,6 +666,12 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
 }
 
 .no-scroll {
@@ -633,6 +693,11 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #2196f3;
 }
 .input-title {
   font-size: 12px;
@@ -648,6 +713,11 @@ img {
   resize: none;
   padding: 12px 16px;
   margin-bottom: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-comment:hover,
+.modal-comment:focus {
+  border: 1px solid #2196f3;
 }
 .modal-comment::placeholder {
   font-size: 12px;
