@@ -36,27 +36,7 @@
     transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal-close {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
-    background: var(--main-bgrd-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    justify-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    fill: #000000;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-close:hover,
-  .modal-close:focus {
-    fill: var(--accent-color);
-  }
+ 
   
   .no-scroll {
     overflow: hidden;
@@ -185,33 +165,7 @@
     justify-content: center;
     margin-bottom: 30px;
   }
-  .modal-button {
-    font-family: inherit;
-    font-weight: 700;
-    line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--second-accent-color);
-    background-color: var(--accent-color);
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 10px 52px;
-    min-width: 200 px;
-    border: 1px transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .modal-button:hover,
-  .modal-button:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+ 
   .modal-button-wrap {
     display: flex;
     justify-content: center;
