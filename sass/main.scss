@@ -1,7 +1,11 @@
-@import './utils/vars';
 @import './base/reset';
 @import './base/common';
+@import './utils/vars';
 @import './utils/hidden';
+@import './components/modal';
+@import './components/socials';
+@import './components/logo';
+@import './components/buttons';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/benefits';
@@ -10,7 +14,3 @@
 @import './layouts/clients';
 @import './layouts/footer';
 @import './layouts/portfolio';
-@import './components/modal';
-@import './components/socials';
-@import './components/logo';
-@import './components/buttons';
