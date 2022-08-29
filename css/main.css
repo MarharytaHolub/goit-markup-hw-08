@@ -272,7 +272,7 @@ a:focus {
   color: var(--second-accent-color);
 }
 
-.button {
+.button, .button-filter, .button-flex, .button-close, .button-medium, .button-long {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -289,22 +289,22 @@ a:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-value), color var(--transition-value), box-shadow var(--transition-value), fill var(--transition-value);
 }
-.button:hover, .button:focus {
+.button:hover, .button-filter:hover, .button-flex:hover, .button-close:hover, .button-medium:hover, .button-long:hover, .button:focus, .button-filter:focus, .button-flex:focus, .button-close:focus, .button-medium:focus, .button-long:focus {
   background-color: #188ce8;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button--long {
+.button-long {
   padding: 10px 32px;
   min-width: 216px;
 }
 
-.button--medium {
+.button-medium {
   padding: 10px 52px;
   min-width: 200 px;
 }
 
-.button--close {
+.button-close {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -317,13 +317,13 @@ a:focus {
   display: flex;
   fill: #000000;
 }
-.button--close:hover, .button--close:focus {
+.button-close:hover, .button-close:focus {
   fill: var(--accent-color);
   background-color: currentColor;
   box-shadow: none;
 }
 
-.button--flex {
+.button-flex {
   min-width: 200px;
   height: 50px;
   padding: 10px 0px;
@@ -331,7 +331,7 @@ a:focus {
   gap: 10px;
 }
 
-.button--filter {
+.button-filter {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -341,7 +341,7 @@ a:focus {
   padding: 6px 22px;
   box-shadow: none;
 }
-.button--filter:hover, .button--filter:focus {
+.button-filter:hover, .button-filter:focus {
   color: var(--second-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }

@@ -25,17 +25,21 @@
   }
   
   
-  .button--long {
+  .button-long {
+    @extend .button;
     padding: 10px 32px;
     min-width: 216px; 
     }
 
- .button--medium {
+ .button-medium {
+    @extend .button;
     padding: 10px 52px;
     min-width: 200 px;
+    
     }
     
-.button--close {
+.button-close {
+    @extend .button;
     position: absolute;
     right: 8px;
     top: 8px;
@@ -55,7 +59,8 @@
       }
     }
     
- .button--flex {
+ .button-flex {
+    @extend .button;
     min-width: 200px;
     height: 50px;
     padding: 10px 0px;
@@ -63,7 +68,8 @@
     gap: 10px;
     
   }
-    .button--filter {
+    .button-filter {
+    @extend .button;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
