@@ -15,11 +15,8 @@
   }
   
   &__pre-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 1.14, 700); 
     text-transform: uppercase;
-    letter-spacing: 0.03em;
     color: var(--main-title-color);
     margin-top: 0px;
     margin-bottom: 0px;
@@ -32,9 +29,7 @@
   }
  
   &__text {
+    @include font(14px, 1.71); 
     margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
   }
   }

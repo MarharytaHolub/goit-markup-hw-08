@@ -1,7 +1,5 @@
   .button{
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include font(16px, 1.88, 700, 0.06em); 
     cursor: pointer;
     font-family: inherit;
     text-align: center;
@@ -70,10 +68,7 @@
   }
     .button-filter {
     @extend .button;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
+    @include font(null, 1.62, 500, 0.03em); 
     color: var(--main-title-color);
     background-color: var(--second-bgrd-color);
     padding: 6px 22px;
