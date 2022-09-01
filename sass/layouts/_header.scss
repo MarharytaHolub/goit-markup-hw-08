@@ -8,29 +8,20 @@
     display: flex;
     align-items: center;
   }
-  .navigation{
-  &__link {
+ 
+    .navigation__link {
     @include font(14px, 1.14, 500, 0.02em); 
     position: relative;
     padding: 32px 0px;
     display: block;
     color: var(--main-title-color);
+
+    .navigation__link:hover::after {
+      transform: scaleX(1);
+    } 
   }
-  &__link--current {
+  .navigation__link--current {
     color: var(--accent-color);
-    navigation___link:not(&)::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: var(--accent-color);
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      transform: scaleX(0);
-      transition: background-color var(--transition-value);
-    }
     &::after {
       content: '';
       display: block;
@@ -43,28 +34,38 @@
       bottom: -1px;
     }
   }
+  .navigation___link:not(.navigation__link--current )::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      transform: scaleX(0);
+      transition: background-color var(--transition-value);
+    }
+ 
   
-  &__link:hover::after {
-    transform: scaleX(1);
-  } 
-  &__list {
+  
+  .navigation__list {
     margin-left: 93px;
   }
-  }
+  
   .navigation__item:not(:last-child),
   .contacts__item:not(:last-child) {
     margin-right: 50px;
   }
   .contacts {
     margin-left: auto;
-    &__icon-tel {
+  }
+  .contacts__icon  {
       margin-right: 10px;
     }
-    &__icon-mail {
-      margin-right: 10px;
-    }
-    &__tel,
-    &__mail {
+
+  .contacts__link {
     @include font(14px, 1.14, 500, 0.02em); 
     display: flex;
     align-items: center;
@@ -72,6 +73,3 @@
     fill: var(--second-main-color);
     transition: color  var(--transition-value);
   }
-  }
-  
-  

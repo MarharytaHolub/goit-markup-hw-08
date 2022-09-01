@@ -27,7 +27,7 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     }
-    &__pre-title {
+    &__title {
       @include font(18px, 2, 700, 0.06em); 
       margin-bottom: 4px;
       color: var(--main-title-color);
