@@ -10,12 +10,21 @@ body {
     height: auto;
   }
   .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @include mq(mobile) {
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mq(tablet) {
+      width: 768px;
   }
+    @include mq(desktop) {
+      width: 1200px;
+  }
+}
   .section {
     padding: 94px 0px;
   }
@@ -38,4 +47,12 @@ body {
     margin-bottom: 50px;
     text-align: center;
     color: var(--main-title-color);
+  }
+
+  header, footer, section{
+    display: none;
+  }
+
+  .block{
+    display: block;
   }
