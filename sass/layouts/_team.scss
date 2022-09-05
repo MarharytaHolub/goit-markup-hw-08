@@ -2,27 +2,42 @@
     background-color: var(--second-bgrd-color);}
     .team{
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 30px;
+      
+      
+      @include mq(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
     .team__item {
-      flex-basis: calc((100% - 90px) / 4);
       background-color: var(--normal-color);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
-      &:not(:last-child) {
-        margin-right: 30px;
+      
+  
+      @include mq (tablet){
+        flex-basis: calc((100% - 30px) / 2);
       }
-     
+      @include mq(desktop){
+      flex-basis: calc((100% - 90px) / 4);}
+
     }
     .team__box {
-    padding: 30px 0px;
+    padding-top: 30px;
+    padding-bottom: 24px;
     background-color: var(--main-bgrd-color);
+
+    @include mq (desktop){
+      padding-bottom: 30px;
+    }
+
     }
     .team__title {
     @include font(16px, 1.18, 500); 
     text-align: center;
-   
     color: var(--main-title-color);
     }
     .team__text {
