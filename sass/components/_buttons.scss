@@ -68,7 +68,13 @@
     padding: 10px 0px;
     display: flex;
     gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
     
+    @include mq(desktop){
+      margin: 0px;
+    }
   }
     .filter__button {
     @extend .button;
