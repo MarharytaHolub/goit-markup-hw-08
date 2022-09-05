@@ -2,9 +2,16 @@
   
   .benefits {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include mq(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
   }
   .benefits__icon-container {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: var(--second-bgrd-color);
     display: flex;
@@ -20,12 +27,18 @@
     color: var(--main-title-color);
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @include mq (mobile-only ){
+      text-align: center;
+    }
   }
   .benefits__item {
-    flex-basis: calc((100% - 90px) / 4);
-   &:not(:last-child) {
-      margin-right: 30px;
+    @include mq (tablet){
+      flex-basis: calc((100% - 30px) / 2);
     }
+    @include mq(desktop){
+    flex-basis: calc((100% - 90px) / 4);}
+  
   }
  
   .benefits__text {
