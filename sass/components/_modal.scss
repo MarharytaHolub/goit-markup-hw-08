@@ -18,8 +18,9 @@
   .modal {
     position: absolute;
     padding: 40px;
-    width: 528px;
-    min-height: 581px;
+    width: 95%;
+    max-height: 95%;
+    height: auto;
     background-color: var(--main-bgrd-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -29,14 +30,25 @@
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-value),
-      opacity var(--transition-value);}
-      .backdrop.is-hidden .modal {
+      opacity var(--transition-value);
+    
+    @include mq(mobile){
+      width: 450px;
+      height: 609px;
+      }
+    @include mq(desktop){
+      width: 528px;
+    height: 581px;
+    }
+  }
+
+  .backdrop.is-hidden .modal {
         transform: translate(-50%, -50%) scale(0);
         opacity: 0;
         transition: translate var(--transition-value),
           opacity var(--transition-value);
       }
-      .modal__title {
+  .modal__title {
         @include font(20px, 1.15, 700);  
         text-align: center;
         color: var(--main-title-color);
@@ -50,11 +62,10 @@
     }
   
   
-  .input{
-    &:not(:nth-child(4)){
+  .input:not(:nth-child(4)){
       margin-bottom: 10px;
     }
-  }
+  
   .input__wrap {
       position: relative;
       margin-top: 4px;
@@ -69,7 +80,7 @@
       transition: fill var(--transition-value);
       .input__form:focus + &{
         fill:var(--accent-color); 
-       
+ 
       }
       
     }
@@ -96,25 +107,45 @@
         resize: none;
         padding: 12px 16px;
         &::placeholder {
-          @include font(12px, 1.17, null, 0.01em); 
+          @include font(14px, 1.14, null, 0.01em); 
           color: rgba(117, 117, 117, 0.5);
-        
+       
+          @include mq(desktop){
+            font-size: 12px;
+            line-height: 1.17;
         }
         }
       }
-  
+    }
   
   .agreement {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;}
+    margin-bottom: 20px;
+    @include mq(mobile){
+      margin-top: 20px;
+      margin-bottom: 30px;
+      
+  }
+  }
     .agreement__text{
-      @include font(14px, 1.71,); 
+      @include font(10px, 1.1); 
       display: flex;
       color: var(--second-main-color);
       align-items: center;
-      & span{
+      @include mq(mobile){
+        font-size: 12px;
+        line-height: 1.17;
+        
+    }
+   
+        @include mq(desktop){
+        font-size: 14px;
+        line-height: 1.71;
+    }}
+     
+    .agreement__text span{
         width: 16px;
         height: 15px;
         border: 1.8px solid var(--main-title-color);
@@ -125,8 +156,8 @@
         transition: background-color  var(--transition-value),
          border-color  var(--transition-value);
         margin-right: 7px;
-      }
-    }
+     
+     } 
     .agreement__icon{
       fill: transparent;
       transition: fill  var(--transition-value);
@@ -150,7 +181,7 @@
       margin-left: 5px;
     
     }
-
+  
   
  
  

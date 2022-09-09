@@ -22,7 +22,48 @@
     }
   }
   
+  .header__button{
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    fill: #000000;
   
+
+
+    @include mq(tablet){
+      display: none;
+    } 
+  }
+
+  .mob-menu__button-close{
+    @extend .button;
+    
+    margin-left: auto;
+    
+    width: 40px;
+    height: 40px;
+    background: var(--main-bgrd-color);
+    border: none;
+    box-shadow: none;
+    display: block;
+    fill: #000000;
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      background-color: currentColor;
+      box-shadow: none;
+      }
+  }
   .hero__button{
     @extend .button;
     padding: 10px 24px;

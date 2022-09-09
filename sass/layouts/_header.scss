@@ -1,12 +1,23 @@
 .header {
     border-bottom: 1px solid #ececec;
+    min-height: 60px;
   }
+.navigation {
+  display: none;
+}
+.header__container{
+  display: flex;
+  align-items: center; 
 
+}
   .navigation,
-  .header__container,
   .navigation__list, .contacts {
-    display: flex;
-    align-items: center;
+   
+    @include mq(tablet){
+     display: flex;
+    align-items: center;  
+    } 
+   
   }
  
     .navigation__link {
@@ -51,25 +62,179 @@
   
   
   .navigation__list {
-    margin-left: 93px;
+    margin-left: 87px;
+    @include mq (desktop){
+      margin-left: 93px;
+    }
   }
   
-  .navigation__item:not(:last-child),
-  .contacts__item:not(:last-child) {
+  .navigation__item:not(:last-child){
     margin-right: 50px;
   }
+  .contacts__item:not(:last-child) {
+@include mq(tablet-only){
+  margin-bottom: 10px ;
+}
+    @include mq(desktop){
+       margin-right: 30px;}
+  }
   .contacts {
-    margin-left: auto;
+    display: none;
+    @include mq(tablet-only){
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+     align-items: flex-start;
+     
+    
+     } 
+     @include mq(desktop){
+      display: flex;
+     margin-left: auto;
+     } 
+    
   }
   .contacts__icon  {
       margin-right: 10px;
     }
 
   .contacts__link {
-    @include font(14px, 1.14, 500, 0.02em); 
+    @include font(12px, 1.14, 500, 0.02em); 
     display: flex;
     align-items: center;
     color: var(--second-main-color);
     fill: var(--second-main-color);
     transition: color  var(--transition-value);
+    @include mq(desktop){
+      font-size: 14px;
+    }
+  }
+
+  .mob-menu {
+    position: fixed;
+    background-color: var(--main-bgrd-color);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    > .mob-menu__container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+    }
+
+    @include mq(tablet){
+      display: none;
+    } 
+
+  }
+  .mob-menu__container{
+    padding-left: 40px;
+    
+
+    @include mq(mobile) {
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  // .mob-menu__button-close {
+  // }
+  // .mob-menu__navigation {
+  // }
+  // .mob-menu__list {
+  //   display: block;
+  //   gap: 32px;
+  // }
+  .menu__item:not(:last-child) {
+    margin-bottom: 16px;
+    @include mq(mobile){
+      margin-bottom: 32px;
+    }
+  }
+  .menu__link {
+    @include font(30px, 1.18, 500, 0.02em); 
+    color: var(--main-title-color);
+    @include mq(mobile){
+      font-size: 40px;
+    }
+  }
+  .menu__link--current {
+    color: var(--accent-color)
+  }
+  .mob-contacts {
+    margin-bottom: 32px;
+    @include mq(mobile){
+      margin-bottom: 64px;
+    }
+  }
+  .mob-contacts__item:not(:last-child) {
+    margin-bottom: 16px; 
+    @include mq(mobile){
+      margin-bottom: 32px;
+    }
+  }
+  .mob-contacts__link {
+    @include font(25px, 1.18, 500, 0.02em); 
+    color: var(--accent-color);
+    @include mq(mobile){
+      font-size: 34px;
+    }
+    
+
+  }
+  .mob-contacts__link--mail {
+    @include font(20px, 1.17, 500, 0.02em); 
+    color: var(--second-main-color);
+    @include mq(mobile){
+      font-size: 24px;
+    }
+    
+
+  }
+  .mob-socials {
+    display: flex;
+  }
+  .mob-socials__item{
+    display: flex;
+  }
+  .mob-socials__item:not(:last-child){
+    margin-right: 5px;
+    @include mq(mobile){
+      margin-right: 10px;
+    }
+  }
+  .mob-socials__item:not(:last-child)::after {
+    content: '';
+  
+    display: block;
+    width: 1px;
+    height: 100%;
+    margin-left: 5px;
+  
+    background-color: rgba(33, 33, 33, 0.2);
+    @include mq(mobile){
+      margin-left: 10px;
+    }
+  }
+  
+  .mob-socials__link {
+    @include font(14px, 1.22, 500, 0.02em); 
+    color: var(--accent-color);
+    @include mq(mobile){
+      font-size: 18px;
+    }
+
+  }
+  .mob-menu__navigation{
+    display: flex;
+  }
+  .container__mob-contacts{
+    
+    margin-top: auto;
+
   }
