@@ -3,11 +3,51 @@
     background-color: #2f303a;
     text-align: center;
     background-color: #757575;
-    background-image: linear-gradient(
+
+   
+      background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Img.jpg);
+      url(../images/hero-bgr-mob-1x.jpg); 
+    @include mq (retina){
+       background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bgr-mob-2x.jpg);
+    }
+  
+  @include mq(tablet){
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-tablet-1x.jpg); 
+  @include mq (retina){
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-tablet-2x.jpg);
+  }
+}
+
+    @include mq(desktop){
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Img.jpg); 
+    @include mq (retina){
+       background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-2x.jpg);
+    }
+  }
+   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
