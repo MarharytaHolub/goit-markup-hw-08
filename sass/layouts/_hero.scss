@@ -3,6 +3,9 @@
     background-color: #2f303a;
     text-align: center;
     background-color: #757575;
+    @include mq (desktop){
+      padding: 200px 0px;
+    }
 
    
       background-image: linear-gradient(

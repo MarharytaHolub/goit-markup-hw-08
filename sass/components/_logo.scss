@@ -17,10 +17,4 @@
       justify-items: center;
     }
   }
-  .logo--absolute{
-    @include mq(mobile-only){
-      position: absolute;
-      left: 15px;
-      top: 16px;
-      bottom: 16px;
-  }}
+ 

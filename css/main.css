@@ -69,7 +69,12 @@ img {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 ul {
@@ -88,13 +93,22 @@ a:focus {
 }
 
 .section__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--main-title-color);
+}
+@media (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {
@@ -292,7 +306,6 @@ a:focus {
 }
 
 .socials {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -345,15 +358,6 @@ a:focus {
   justify-items: center;
 }
 
-@media screen and (max-width: 767.98px) {
-  .logo--absolute {
-    position: absolute;
-    left: 15px;
-    top: 16px;
-    bottom: 16px;
-  }
-}
-
 .button, .filter__button, .footer__button, .modal__button-close, .modal__button, .hero__button, .mob-menu__button-close {
   font-size: 16px;
   line-height: 1.88;
@@ -382,11 +386,8 @@ a:focus {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  bottom: 10px;
-  width: 40px;
-  height: 40px;
+  right: 23px;
+  top: 22px;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -487,6 +488,7 @@ a:focus {
 }
 
 .header {
+  display: flex;
   border-bottom: 1px solid #ececec;
   min-height: 60px;
 }
@@ -496,8 +498,10 @@ a:focus {
 }
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -551,11 +555,11 @@ a:focus {
   transition: background-color var(--transition-value);
 }
 
-.navigation__list {
+.navigation {
   margin-left: 87px;
 }
 @media (min-width: 1200px) {
-  .navigation__list {
+  .navigation {
     margin-left: 93px;
   }
 }
@@ -782,6 +786,11 @@ a:focus {
   max-width: 1600px;
   margin: 0 auto;
 }
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr-mob-2x.jpg);
@@ -988,6 +997,7 @@ a:focus {
   letter-spacing: 0.03em;
   margin-top: 10px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .clients {
@@ -1075,7 +1085,7 @@ a:focus {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__container {
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 @media (min-width: 1200px) {
@@ -1085,12 +1095,13 @@ a:focus {
   }
 }
 
-.join {
-  margin: 60px 0px;
+@media screen and (max-width: 767.98px) {
+  .join {
+    margin: 60px 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   .join {
-    margin-left: 165px;
     margin-top: 0px;
   }
 }
@@ -1167,17 +1178,6 @@ a:focus {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .section--padding-60 {
-    padding: 60px 0px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .section--padding-60 {
-    padding: 60px 0px;
-  }
-}
-
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -1205,8 +1205,8 @@ a:focus {
 }
 @media screen and (min-width: 768px) {
   .gallery {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -1250,7 +1250,7 @@ a:focus {
 }
 
 .gallery__box {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
   flex-grow: 1;

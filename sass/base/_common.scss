@@ -26,7 +26,10 @@ body {
   }
 }
   .section {
-    padding: 94px 0px;
+    padding: 60px 0px;
+    @include mq(desktop){
+      padding: 94px 0px;
+    }
   }
   ul {
     list-style: none;
@@ -42,11 +45,14 @@ body {
   }
  
   .section__title {
-   
-    @include font(36px, 1.16, 700);
-    margin-bottom: 50px;
+    @include font(28px, 1.17, 700);
+    margin-bottom: 30px;
     text-align: center;
     color: var(--main-title-color);
+    @include mq (desktop){
+      @include font(36px, 1.16, 700);
+    margin-bottom: 50px;
+    }
   }
 
   

@@ -1,4 +1,5 @@
 .header {
+  display: flex;
     border-bottom: 1px solid #ececec;
     min-height: 60px;
   }
@@ -6,8 +7,11 @@
   display: none;
 }
 .header__container{
-  display: flex;
-  align-items: center; 
+ position: relative; 
+ display: flex;
+ align-items: center; 
+ width: 100%;
+  
 
 }
   .navigation,
@@ -61,7 +65,7 @@
  
   
   
-  .navigation__list {
+  .navigation {
     margin-left: 87px;
     @include mq (desktop){
       margin-left: 93px;
