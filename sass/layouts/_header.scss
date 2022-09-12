@@ -10,8 +10,9 @@
  position: relative; 
  display: flex;
  align-items: center; 
+ @include mq(mobile-only){
  width: 100%;
-  
+  }
 
 }
   .navigation,

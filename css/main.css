@@ -501,7 +501,11 @@ a:focus {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+}
+@media screen and (max-width: 767.98px) {
+  .header__container {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
