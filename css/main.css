@@ -489,6 +489,7 @@ a:focus {
 
 .header {
   display: flex;
+  width: 100%;
   border-bottom: 1px solid #ececec;
   min-height: 60px;
 }
@@ -502,12 +503,12 @@ a:focus {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 767.98px) {
+
+@media (max-width: 480px) {
   .header__container {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 768px) {
   .navigation,
 .navigation__list, .contacts {
